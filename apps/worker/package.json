@@ -9,6 +9,7 @@
     "https": "pnpm dev",
     "test": "vitest run --passWithNoTests",
     "test:domains": "tsx scripts/test-domains.ts",
+    "seed:wa-bot-tools": "dotenv -e ../../.env -- tsx scripts/seed-wa-bot-tools.ts",
     "test:watch": "vitest",
     "worker:schedule": "dotenv -e ../../.env -- tsx --watch src/schedule/worker.ts",
     "worker:ai-agent": "dotenv -e ../../.env -- tsx --watch src/ai-agent/worker.ts",
