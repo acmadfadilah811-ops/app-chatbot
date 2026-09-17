@@ -111,6 +111,16 @@ const MEDIA_STEP_SUPPORT: Record<
     sendFile: unsupported,
     sendGif: unsupported,
   },
+  // evolutionWhatsapp's sendFlowStep only implements sendText (see
+  // integrations/evolution-whatsapp/src/handlers/message/outgoing-message/index.ts)
+  // -- every media step type is a silent no-op there today.
+  [channelTypes.enum.evolutionWhatsapp]: {
+    sendImage: unsupported,
+    sendVideo: unsupported,
+    sendAudio: unsupported,
+    sendFile: unsupported,
+    sendGif: unsupported,
+  },
   [channelTypes.enum.zalo]: {
     sendImage: full,
     sendVideo: unsupported,

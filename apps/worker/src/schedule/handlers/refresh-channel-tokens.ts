@@ -27,6 +27,9 @@ const refreshTokenAdapter: Record<
   webchat: undefined,
   smtp: undefined,
   telegram: undefined,
+  // Self-hosted, custom-auth (apiUrl/apiKey/instanceName) -- no OAuth token
+  // to expire or refresh.
+  evolutionWhatsapp: undefined,
   api: undefined,
 }
 

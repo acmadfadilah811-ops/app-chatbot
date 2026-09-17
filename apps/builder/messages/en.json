@@ -733,6 +733,7 @@
       "instagram": "This Instagram account is already connected to another workspace.",
       "messenger": "This Facebook Page is already connected to another workspace.",
       "telegram": "This Telegram bot is already connected to another workspace.",
+      "evolutionWhatsapp": "This Evolution API instance is already connected to another workspace.",
       "tiktok": "This TikTok account is already connected to another workspace.",
       "whatsapp": "This WhatsApp number is already connected to another workspace.",
       "zalo": "This Zalo OA is already connected to another workspace."
@@ -902,6 +903,14 @@
         "step2": "Send <strong>/newbot</strong> and follow the instructions.",
         "step3": "After you created the bot, you will receive the bot API token. Copy the API token and paste it below."
       }
+    },
+    "evolutionWhatsapp": {
+      "label": "WhatsApp (Evolution API)",
+      "name": "Display Name",
+      "apiUrl": "Evolution API Server URL",
+      "apiKey": "Evolution API Key",
+      "instanceName": "Instance Name",
+      "connectDescription": "Connect a WhatsApp number through a self-hosted Evolution API instance. Enter the server URL, API key, and the instance name exactly as configured on your Evolution API server."
     },
     "matchAll": {
       "label": "Match all the conditions below"

@@ -122,6 +122,9 @@ importers:
       '@chatbotx.io/integration-drip':
         specifier: workspace:*
         version: link:../../integrations/drip
+      '@chatbotx.io/integration-evolution-whatsapp':
+        specifier: workspace:*
+        version: link:../../integrations/evolution-whatsapp
       '@chatbotx.io/integration-facebook-ads':
         specifier: workspace:*
         version: link:../../integrations/facebook-ads
@@ -715,6 +718,9 @@ importers:
       '@chatbotx.io/integration-drip':
         specifier: workspace:*
         version: link:../../integrations/drip
+      '@chatbotx.io/integration-evolution-whatsapp':
+        specifier: workspace:*
+        version: link:../../integrations/evolution-whatsapp
       '@chatbotx.io/integration-facebook-ads':
         specifier: workspace:*
         version: link:../../integrations/facebook-ads
@@ -1056,6 +1062,46 @@ importers:
       '@types/node':
         specifier: 24.x
         version: 24.13.1
+      typescript:
+        specifier: ^5
+        version: 5.9.3
+      vitest:
+        specifier: ^4.1.0
+        version: 4.1.8(@opentelemetry/api@1.9.1)(@types/node@24.13.1)(@vitest/coverage-v8@4.1.8)(jsdom@25.0.1)(msw@2.14.6(@types/node@24.13.1)(typescript@5.9.3))(vite@7.3.5(@types/node@24.13.1)(jiti@2.7.0)(lightningcss@1.32.0)(tsx@4.23.0)(yaml@2.9.0))
+
+  integrations/evolution-whatsapp:
+    dependencies:
+      '@chatbotx.io/flow-config':
+        specifier: workspace:*
+        version: link:../../packages/flow-config
+      '@chatbotx.io/logger':
+        specifier: workspace:*
+        version: link:../../packages/logger
+      '@chatbotx.io/sdk':
+        specifier: workspace:*
+        version: link:../../packages/sdk
+      '@chatbotx.io/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
+      ky:
+        specifier: ^2.0.2
+        version: 2.0.2
+      zod:
+        specifier: ^4.3.6
+        version: 4.5.4
+    devDependencies:
+      '@chatbotx.io/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
+      '@chatbotx.io/vitest-config':
+        specifier: workspace:*
+        version: link:../../packages/vitest-config
+      '@types/node':
+        specifier: 24.x
+        version: 24.13.1
+      msw:
+        specifier: ^2.7.3
+        version: 2.14.6(@types/node@24.13.1)(typescript@5.9.3)
       typescript:
         specifier: ^5
         version: 5.9.3
@@ -10544,9 +10590,6 @@ packages:
   set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
 
-  set-cookie-parser@3.1.0:
-    resolution: {integrity: sha512-kjnC1DXBHcxaOaOXBHBeRtltsDG2nUiUni+jP92M9gYdW12rsmx92UsfpH7o5tDRs7I1ZZPSQJQGv3UaRfCiuw==}
-
   set-cookie-parser@3.1.2:
     resolution: {integrity: sha512-5/r/lTwbJ3zQ+qwdUFZYeRNqda7P5HD8zQKqlSjdGt1/S0cjLAphHusj4Y58ahDtWn/g32xrIS58/ikOvwl0Lw==}
 
@@ -12060,7 +12103,7 @@ snapshots:
       jose: 6.2.8
       kysely: 0.28.17
       nanostores: 1.4.2
-      zod: 4.4.3
+      zod: 4.5.4
     optionalDependencies:
       '@cloudflare/workers-types': 4.20240718.0
       '@opentelemetry/api': 1.9.1
@@ -16419,7 +16462,7 @@ snapshots:
   headers-polyfill@5.0.1:
     dependencies:
       '@types/set-cookie-parser': 2.4.10
-      set-cookie-parser: 3.1.0
+      set-cookie-parser: 3.1.2
 
   help-me@5.0.0: {}
 
@@ -18922,8 +18965,6 @@ snapshots:
   server-only@0.0.1: {}
 
   set-blocking@2.0.0: {}
-
-  set-cookie-parser@3.1.0: {}
 
   set-cookie-parser@3.1.2: {}
 

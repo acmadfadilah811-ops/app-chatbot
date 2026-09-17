@@ -14,6 +14,7 @@ import type {
 } from "@chatbotx.io/database/types"
 import { integration as integrationApi } from "@chatbotx.io/integration-api"
 import { integration as integrationChatbotx } from "@chatbotx.io/integration-chatbotx"
+import { integration as integrationEvolutionWhatsapp } from "@chatbotx.io/integration-evolution-whatsapp"
 import { integration as integrationGoogleCalendar } from "@chatbotx.io/integration-google-calendar"
 import { integration as integrationGoogleSheets } from "@chatbotx.io/integration-google-sheets"
 import { integration as integrationInstagram } from "@chatbotx.io/integration-instagram"
@@ -48,6 +49,7 @@ export const allIntegrations: Record<
   openai: undefined,
   webchat: integrationWebchat,
   whatsapp: integrationWhatsapp,
+  evolutionWhatsapp: integrationEvolutionWhatsapp,
   telegram: integrationTelegram,
   tiktok: integrationTiktok,
   zalo: integrationZalo,
@@ -86,6 +88,11 @@ export const integrationService = {
       case "whatsapp": {
         modelName = "IntegrationWhatsapp"
         columnName = "phoneNumberId"
+        break
+      }
+      case "evolutionWhatsapp": {
+        modelName = "IntegrationEvolutionWhatsapp"
+        columnName = "instanceName"
         break
       }
       case "telegram": {
@@ -174,6 +181,9 @@ export const integrationService = {
         break
       case "whatsapp":
         integrationTable = "IntegrationWhatsapp"
+        break
+      case "evolutionWhatsapp":
+        integrationTable = "IntegrationEvolutionWhatsapp"
         break
       case "zalo":
         integrationTable = "IntegrationZalo"

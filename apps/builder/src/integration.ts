@@ -2,6 +2,7 @@ import { integration as integrationActiveCampaign } from "@chatbotx.io/integrati
 import { integration as integrationApi } from "@chatbotx.io/integration-api"
 import { integration as integrationChatbotx } from "@chatbotx.io/integration-chatbotx"
 import { integration as integrationDrip } from "@chatbotx.io/integration-drip"
+import { integration as integrationEvolutionWhatsapp } from "@chatbotx.io/integration-evolution-whatsapp"
 import { integration as integrationFacebookAds } from "@chatbotx.io/integration-facebook-ads"
 import { integration as integrationGetResponse } from "@chatbotx.io/integration-get-response"
 import { integration as integrationGoogleCalendar } from "@chatbotx.io/integration-google-calendar"
@@ -24,6 +25,7 @@ import { integration as integrationZalo } from "@chatbotx.io/integration-zalo"
 export const integrations = {
   api: integrationApi,
   whatsapp: integrationWhatsapp,
+  evolutionWhatsapp: integrationEvolutionWhatsapp,
   messenger: integrationMessenger,
   instagram: integrationInstagram,
   instagramFacebook: integrationInstagramFacebook,

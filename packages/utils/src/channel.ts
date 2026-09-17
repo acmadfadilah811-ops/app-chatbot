@@ -20,6 +20,11 @@ export const channelTypes = z.enum([
   "webchat",
   "messenger",
   "whatsapp",
+  // Self-hosted WhatsApp via Evolution API (Baileys) -- distinct from
+  // "whatsapp" (Meta's official WhatsApp Business Cloud API, OAuth2 +
+  // platform credential). Bintang's own bot uses this one; see
+  // integrations/evolution-whatsapp.
+  "evolutionWhatsapp",
   "zalo",
   "smtp",
   "telegram",
@@ -116,6 +121,14 @@ export const CHANNEL_CAPABILITIES: Record<ChannelType, ChannelCapability> = {
     manageable: true,
     requiresCredential: true,
     order: 1,
+  },
+  evolutionWhatsapp: {
+    creatable: true,
+    manageable: true,
+    // customAuthSchema (apiUrl/apiKey/instanceName the user types directly),
+    // same as telegram/webchat -- no shared OAuth app across workspaces.
+    requiresCredential: false,
+    order: 1.5,
   },
   messenger: {
     creatable: true,

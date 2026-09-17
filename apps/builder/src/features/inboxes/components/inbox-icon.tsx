@@ -67,6 +67,14 @@ export const INBOX_ICON_CONFIG: Record<ChannelType, InboxIconConfig> = {
     fill: SiWhatsappHex,
     defaultLabel: "Whatsapp",
   },
+  // Same brand icon as "whatsapp" -- it IS WhatsApp, just reached through a
+  // self-hosted Evolution API bridge instead of Meta's official Cloud API.
+  // Label carries the distinction since the icon can't.
+  evolutionWhatsapp: {
+    Icon: SiWhatsapp,
+    fill: SiWhatsappHex,
+    defaultLabel: "WhatsApp (Evolution API)",
+  },
   zalo: {
     Icon: SiZalo,
     fill: SiZaloHex,

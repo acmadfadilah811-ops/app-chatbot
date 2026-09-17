@@ -91,6 +91,7 @@ export const errorLogProviderLabels = {
   webchat: "Webchat",
   messenger: "Messenger",
   whatsapp: "WhatsApp",
+  evolutionWhatsapp: "WhatsApp (Evolution API)",
   zalo: "Zalo",
   smtp: "Email",
   telegram: "Telegram",

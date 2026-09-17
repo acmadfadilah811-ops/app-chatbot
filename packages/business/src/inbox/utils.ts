@@ -102,6 +102,9 @@ export function buildInboxLink(
     smtp: undefined,
     api: undefined,
     omnichannel: undefined,
+    // No public "click to chat" URL scheme for a self-hosted Evolution API
+    // instance (unlike wa.me, which is Meta's own official link format).
+    evolutionWhatsapp: undefined,
   }
   const config = allLinkConfigs[inbox.channel as ChannelType]
 
@@ -147,6 +150,7 @@ export function buildPostLink(channel: ChannelType, postId: string): string {
     smtp: "",
     api: "",
     omnichannel: "",
+    evolutionWhatsapp: "",
   }
 
   return allLinkConfigs[channel]
@@ -167,6 +171,7 @@ export function buildMessageLink(
     smtp: "",
     api: "",
     omnichannel: "",
+    evolutionWhatsapp: "",
   }
 
   return allLinkConfigs[channel]

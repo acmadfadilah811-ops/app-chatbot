@@ -79,6 +79,7 @@ import { integrationApiRelations } from "./integration-api"
 import { integrationClaudeRelations } from "./integration-claude"
 import { integrationDeepseekRelations } from "./integration-deepseek"
 import { integrationDripRelations } from "./integration-drip"
+import { integrationEvolutionWhatsappRelations } from "./integration-evolution-whatsapp"
 import { integrationFacebookAdsRelations } from "./integration-facebook-ads"
 import { integrationGeminiRelations } from "./integration-gemini"
 import { integrationGetResponseRelations } from "./integration-get-response"
@@ -260,6 +261,7 @@ export const relations = {
   ...savedReplyRelations,
   ...integrationTelegramRelations,
   ...integrationTiktokRelations,
+  ...integrationEvolutionWhatsappRelations,
   ...integrationInstagramRelations,
   ...integrationActiveCampaignRelations,
   ...integrationKlaviyoRelations,

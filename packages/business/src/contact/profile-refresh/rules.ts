@@ -31,6 +31,7 @@ export const contactProfileNameCapabilities = {
   zalo: { inbound: "channelApi", onDemand: true },
   telegram: { inbound: "channelApi", onDemand: true }, // getChat keyed by the contact's chat id — identity-safe (payload names a clicking user, not the chat)
   whatsapp: { inbound: "payload", onDemand: false }, // contacts[0].profile.name; no user-profile API
+  evolutionWhatsapp: { inbound: "payload", onDemand: false }, // webhook data.pushName; contact.getProfile only returns an avatar, no name API
   tiktok: { inbound: null, onDemand: false }, // webhook carries ids only, no profile API
   api: { inbound: "payload", onDemand: false },
   webchat: { inbound: null, onDemand: false },

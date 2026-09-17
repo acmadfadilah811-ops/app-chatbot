@@ -50,6 +50,10 @@ const CHANNEL_WINDOW_SECONDS: Record<ChannelType, number> = {
   webchat: 0,
   messenger: 24 * 60 * 60,
   whatsapp: 24 * 60 * 60,
+  // Self-hosted Evolution API (Baileys) is a normal WhatsApp Web session,
+  // not Meta's official Business Cloud API -- no platform-enforced
+  // 24-hour messaging window applies.
+  evolutionWhatsapp: 0,
   zalo: 0,
   smtp: 0,
   telegram: 0,
