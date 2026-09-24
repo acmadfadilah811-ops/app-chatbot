@@ -23,7 +23,7 @@
   "devDependencies": {
     "@chatbotx.io/typescript-config": "workspace:*",
     "@chatbotx.io/vitest-config": "workspace:*",
-    "@types/node": "^24.10.1",
+    "@types/node": "^24.13.6",
     "tsx": "^4.23.0",
     "vitest": "^4.1.0"
   },
