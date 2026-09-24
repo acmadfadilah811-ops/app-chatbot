@@ -15,7 +15,7 @@
     "@chatbotx.io/javascript-sandbox": "workspace:*",
     "@chatbotx.io/logger": "workspace:*",
     "@t3-oss/env-core": "^0.13.11",
-    "dotenv": "^17.4.2",
+    "dotenv": "^18.0.2",
     "isolated-vm": "^7.0.0",
     "zod": "^4.3.6"
   },
